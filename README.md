@@ -6,6 +6,9 @@
 
 The project contains a simple node.js application that exposes REST APIs to perform arithmetic on integers, and provides a test suite with mocha and chai.
 
+## Changes 
+Enchanced UI & Improved the Calculator working
+
 ## Instructions 
 
 In order to run the app use `npm start`
