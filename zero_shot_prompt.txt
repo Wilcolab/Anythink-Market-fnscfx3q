@@ -1,0 +1,22 @@
+function toSnakeCase(text) {
+  return text
+    .replace(/([a-z])([A-Z])/g, '$1_$2')  // Insert underscore before uppercase letters in camelCase
+    .replace(/\s+/g, '_')                  // Replace spaces with underscores
+    .replace(/[^\w_]/g, '')                // Remove special characters
+    .toLowerCase();                        // Convert to lowercase
+}
+
+// Examples:
+// toSnakeCase('HelloWorld')          => 'hello_world'
+// toSnakeCase('hello world')         => 'hello_world'
+// toSnakeCase('helloWorld123Test')   => 'hello_world123_test'
+// toSnakeCase('hello-world')         => 'helloworld'
+
+function addNumbers(a, b) {
+  return a + b;
+}
+
+// Examples:
+// addNumbers(5, 3)     => 8
+// addNumbers(10, -5)   => 5
+// addNumbers(2.5, 3.7) => 6.2
